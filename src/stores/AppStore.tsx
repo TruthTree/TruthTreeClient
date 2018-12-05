@@ -6,7 +6,7 @@ import { action, observable, decorate } from "mobx"
 class AppStoreClass {
   /////////////// Observable ///////////////
 
-  AppData = []
+  MapData: string[] = ["foo"]
 
   ///////////////// Drivers /////////////////
 
@@ -22,7 +22,7 @@ class AppStoreClass {
 }
 
 decorate(AppStoreClass, {
-  AppData: observable,
+  MapData: observable,
   Create: action,
   Read: action,
   Update: action,
